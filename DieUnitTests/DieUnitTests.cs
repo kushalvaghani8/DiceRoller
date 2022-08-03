@@ -100,17 +100,18 @@ namespace DieUnitTests
             d.GetName().Should().Be("d6");
         }
 
-    } }
 
-/*
 
         [TestMethod]
         public void GetNumSidesReturnsValue()
         {
-           
+
             d.GetNumSides().Should().Be(6);
         }
 
+    }
+}
+/*
 
         [TestMethod]
         public void GetCurrentSideReturnsValue()
