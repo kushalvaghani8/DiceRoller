@@ -73,15 +73,13 @@ namespace DieUnitTests
 
         }
 
-    }
-}
+        /*
 
-/*
         [TestMethod]
         [DataRow(3, 2)]
         [DataRow(5, 10)]
         [DataRow(10, -12)]
-        public void SetSideUpSetsValidSide(int sides, int newSide)
+        public void SetSideUpSetsValidSide(int sides, int newSide) // yet to commit
         {
             Die d = new Die(sides);
             d.SetSideUp(newSide);
@@ -93,6 +91,7 @@ namespace DieUnitTests
 
         }
 
+*/
 
         [TestMethod]
         public void GetDefultNameReturnsValue()
@@ -101,6 +100,9 @@ namespace DieUnitTests
             d.GetName().Should().Be("d6");
         }
 
+    } }
+
+/*
 
         [TestMethod]
         public void GetNumSidesReturnsValue()
