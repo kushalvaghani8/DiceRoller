@@ -24,9 +24,7 @@ namespace DieUnitTests
             d.GetCurrentSide().Should().BeInRange(1, 6); //calling the method get current side to check if the rolled dice range is between 1 to 6
         }
 
-    }
-}
- /*       
+
         //[TestMethod]
         //public void DefaultRollSetsSideCorrectly()
         //{
@@ -35,13 +33,13 @@ namespace DieUnitTests
         //        d.Roll();
         //        d.CurrentSide.Should().BeInRange(1, 6);
         //    }
-            
+
         //}
 
-      
+
 
         [TestMethod]
-        [DataRow(3 , "d3")] //passing in the value and checking if die is able to set custom sides, and name
+        [DataRow(3, "d3")] //passing in the value and checking if die is able to set custom sides, and name
         [DataRow(4, "d4")] //also the range when roll method is called that the range is between 1 to the set number of sides
         [DataRow(8, "d8")]
         [DataRow(10, "d10")]
@@ -54,9 +52,10 @@ namespace DieUnitTests
             di.GetNumSides().Should().Be(sides);
             di.GetCurrentSide().Should().BeInRange(1, sides);
         }
+    }
+}
 
-
-
+/*
         [TestMethod]
         [DataRow(3)]
         [DataRow(4)]
