@@ -109,9 +109,7 @@ namespace DieUnitTests
             d.GetNumSides().Should().Be(6);
         }
 
-    }
-}
-/*
+
 
         [TestMethod]
         public void GetCurrentSideReturnsValue()
@@ -120,4 +118,4 @@ namespace DieUnitTests
         }
 
     }
-}*/
+}
