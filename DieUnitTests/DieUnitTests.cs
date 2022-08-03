@@ -52,10 +52,9 @@ namespace DieUnitTests
             di.GetNumSides().Should().Be(sides);
             di.GetCurrentSide().Should().BeInRange(1, sides);
         }
-    }
-}
 
-/*
+
+
         [TestMethod]
         [DataRow(3)]
         [DataRow(4)]
@@ -74,7 +73,10 @@ namespace DieUnitTests
 
         }
 
+    }
+}
 
+/*
         [TestMethod]
         [DataRow(3, 2)]
         [DataRow(5, 10)]
