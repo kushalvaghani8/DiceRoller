@@ -79,19 +79,19 @@ namespace DieUnitTests
         [DataRow(3, 2)]
         [DataRow(5, 10)]
         [DataRow(10, -12)]
-        public void SetSideUpSetsValidSide(int sides, int newSide) // yet to commit
+        public void SetSideUpSetsValidSide(int sides, int newSide)
         {
             Die d = new Die(sides);
             d.SetSideUp(newSide);
-            d.GetCurrentSide().Should().BeInRange(1, sides);
-            if (newSide >= 1 && newSide <= sides)
+            d.GetCurrentSide().Should().BeInRange(1, sides); //should be within the range
+            if (newSide >= 1 && newSide <= sides) //if new side is valid then the value will be updated
             {
                 d.GetCurrentSide().Should().Be(newSide);
             }
 
         }
 
-*/
+
 
         [TestMethod]
         public void GetDefultNameReturnsValue()

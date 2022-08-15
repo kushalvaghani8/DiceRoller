@@ -18,6 +18,7 @@
   <ItemGroup>
     <None Remove="Models\" />
     <None Remove="FluentAssertions" />
+    <None Remove="Xamarin.UITest" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
